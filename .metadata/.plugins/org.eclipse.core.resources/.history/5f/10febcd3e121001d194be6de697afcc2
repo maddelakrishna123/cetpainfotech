@@ -1,0 +1,16 @@
+package com.cetpainfotech.day4;
+
+public class Student extends Person {
+
+	private int marks ;
+
+	public int getMarks() {
+		return marks;
+	}
+
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	
+	
+}

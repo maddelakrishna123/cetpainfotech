@@ -1,0 +1,20 @@
+package com.cetpainfotech.day1;
+
+public class Session2 {
+
+	public static void main(String[] args) {
+		
+		
+		int x = 20;
+		
+		++x; // pre increment == > x = x + 1
+		
+		// x++ // Post Increment
+		int y =80;
+		int z = y+(++x);
+		System.out.println(z);
+		System.out.println(x);
+
+	}
+
+}

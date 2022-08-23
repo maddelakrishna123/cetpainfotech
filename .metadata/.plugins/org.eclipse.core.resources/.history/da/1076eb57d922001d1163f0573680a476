@@ -1,0 +1,15 @@
+package com.cetpainfotech.day5;
+
+public class Meeting {
+	
+	private int id;
+	private String agenda;
+	
+	// address  city, state, country, pincode
+	
+	private String city;
+	private String state;
+	private String country;
+	private String pincode;
+
+}

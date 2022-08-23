@@ -1,0 +1,27 @@
+package com.cetpainfotech.day3;
+
+public class OverloadDemo {
+
+	public static void main(String[] args) {
+		
+		
+		int x = 5;
+		int y = 6;
+		
+		ArithmeticOperations ao = new ArithmeticOperations();
+	//int res =	ao.add(x, y);
+	
+	
+	double x1 = 3.4;
+	double y1 = 2.3;
+	ao.add(x, y1);
+	
+	String s1 = "123";
+	String s2 = "234";
+	
+	ao.add(s1, s2);
+	
+
+	}
+
+}

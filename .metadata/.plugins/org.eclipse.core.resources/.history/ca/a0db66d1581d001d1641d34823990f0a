@@ -1,0 +1,49 @@
+package com.cetpainfotech.day1;
+
+import java.util.Scanner;
+
+public class Session2 {
+
+	
+	 public static boolean isEven(int number)
+	 {
+		 if(number % 2 == 0)
+		 {
+			return true; 
+			
+		 }
+		 else
+		 {
+			 return false;
+		 }
+		 
+	 }
+	
+	
+	public static void main(String[] args) {
+		
+		
+	Scanner sc = new Scanner(System.in);
+	
+	
+	System.out.println("Enter any Number ");  // .... -3 -2 -1 0 1 2 3 ...
+	int number = sc.nextInt(); // 5 - 5   , -5  5
+    if(number > 0)
+    {
+    	
+	number = -number;
+    }
+    
+    
+	System.out.println(number);
+	
+	sc.close();
+	
+	
+	// 
+	
+	}
+
+}
+
+// if , if -else , if else if , switch

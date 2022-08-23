@@ -1,0 +1,8 @@
+package com.cetpainfotech.day4;
+
+public class Student extends Person {
+
+	private int marks ;
+	
+	
+}

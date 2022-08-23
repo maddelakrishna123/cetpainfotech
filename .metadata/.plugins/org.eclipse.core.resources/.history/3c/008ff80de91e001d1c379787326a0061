@@ -1,0 +1,8 @@
+package com.cetpainfotech.day3.dicegame;
+
+public class Player {
+	
+	private String name;
+	private int value;
+
+}

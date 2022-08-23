@@ -1,0 +1,33 @@
+package com.cetpainfotech.day5;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+
+public class Demo {
+	public static void main(String[] args) throws ParseException {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println();
+		
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		Customer c1 = new Customer(101, "krishna", "krishna@gmail.com", sdf.parse("11-08-1985"));
+		
+		Customer c2 = new Customer(101, "krishna", "krishna@gmail.com", sdf.parse("11-08-1985"));
+		
+		System.out.println(c1);
+		System.out.println(c2);
+		
+		if(c1.equals(c2))
+		{
+			System.out.println("Customer are same");
+		}
+		else 
+		{
+			System.out.println("Customers are different");
+		}
+	}
+
+}

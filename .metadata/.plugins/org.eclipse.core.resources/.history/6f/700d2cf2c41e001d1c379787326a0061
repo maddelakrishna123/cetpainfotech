@@ -1,0 +1,14 @@
+package com.cetpainfotech.day3;
+
+public class ArithmeticOperations {
+	
+	public int add(int a, int b)
+	{
+		return a + b;
+	}
+
+	public double add(double a, double b)
+	{
+		return a + b;
+	}
+}

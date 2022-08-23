@@ -1,0 +1,25 @@
+package com.cetpainfotech.day4;
+
+public class Manager  extends Employee{
+	
+	
+
+	private double bonus;
+
+	public double getBonus() {
+		return bonus;
+	}
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	public Manager(double bonus) {
+		super();
+		this.bonus = bonus;
+	}
+	
+	
+	
+	
+}

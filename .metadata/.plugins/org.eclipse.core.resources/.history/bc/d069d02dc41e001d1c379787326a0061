@@ -1,0 +1,15 @@
+package com.cetpainfotech.day3;
+
+public class OverloadDemo {
+
+	public static void main(String[] args) {
+		
+		
+		int x = 5;
+		int y = 6;
+		
+		ArithmeticOperations ao = new ArithmeticOperations();
+
+	}
+
+}

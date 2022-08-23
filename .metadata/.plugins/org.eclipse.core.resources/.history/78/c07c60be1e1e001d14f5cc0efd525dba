@@ -1,0 +1,22 @@
+package com.cetpainfotech.day2;
+
+public class EmployeeDemo {
+
+	public static void main(String[] args) {
+		
+		
+		// Create Employees
+		
+		// 1. Declare Employee
+		 // ClassName referencevariable;
+		
+		Employee emp;
+		
+		// 2.Initialize Employee
+		
+		
+		
+
+	}
+
+}

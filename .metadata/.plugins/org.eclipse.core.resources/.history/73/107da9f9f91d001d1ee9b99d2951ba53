@@ -1,0 +1,27 @@
+package com.cetpainfotech.day2;
+
+public class Factorial {
+	
+	// define a method :
+	
+	// <access-modifier> <modifier>  returntype methodname(<parameters/arguments){ body}
+	
+	// Access- Modifiers - public(any where ) , private(in same class) , protected(in same package , and related classes), package(inside the same packaess)(No-modifier)
+       
+   // Modifiers - static , final, abstract , synchronized , default
+	
+	// returntye -> any primitives (8), String , Any Class Type, any array, nothing (void)
+public static int  factorial(int num)
+{
+	// body 
+	
+	
+	int fact = 1;
+}
+
+}
+
+// sum(), getNumebr() , getInputStream()
+// write method which should take one integer as argument and should return factorail of that integer
+
+// method should return at most one value

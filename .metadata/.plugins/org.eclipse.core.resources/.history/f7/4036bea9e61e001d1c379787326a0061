@@ -1,0 +1,12 @@
+package com.cetpainfotech.day3;
+
+public class Email {
+	
+	private long id;
+	private String to;
+	private String from;
+	private String subject;
+	private String content;
+	private double size;
+
+}

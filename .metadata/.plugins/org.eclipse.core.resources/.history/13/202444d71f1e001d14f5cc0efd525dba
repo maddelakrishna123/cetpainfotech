@@ -1,0 +1,30 @@
+package com.cetpainfotech.day2;
+
+public class EmployeeDemo {
+
+	public static void main(String[] args) {
+		
+		
+		// Create Employees
+		
+		// 1. Declare Employee
+		 // ClassName referencevariable(any valid identifier);
+		
+		Employee emp;
+		
+		// 2.Initialize Employee
+		   // referencevariable = new Constructor();
+		
+		emp = new Employee(); // default constructor
+		
+		
+		Employee emp1= new Employee();
+		
+		
+		
+		emp.displayEmployeeDetails();
+		
+
+	}
+
+}

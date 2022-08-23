@@ -1,0 +1,25 @@
+package com.cetpainfotech.day1;
+
+import java.util.Scanner;
+
+public class Session2 {
+
+	public static void main(String[] args) {
+		
+		
+	Scanner sc = new Scanner(System.in);
+	
+	
+	System.out.println("Enter any Number ");  // .... -3 -2 -1 0 1 2 3 ...
+	int number = sc.nextInt();
+
+	
+	
+	sc.close();
+	
+	
+	// 
+	
+	}
+
+}

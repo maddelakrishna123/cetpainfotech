@@ -1,0 +1,11 @@
+package com.cetpainfotech.day2;
+
+public class Factorial {
+	
+	// define a method :
+	
+	// <access-modifier> <modifier>  returntype methodname(<parameters/arguments){ body}
+	
+	// Access- Modifiers - public , private , protected, package
+
+}

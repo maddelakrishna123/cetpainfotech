@@ -1,0 +1,48 @@
+package com.cetpainfotech.day2;
+
+public class Employee {
+	
+	
+	// id , name , salary, 
+	// instance variables
+	int id;
+	String name;
+	double salary;
+	
+	
+	// default or No arg
+	public Employee()
+	{
+		
+		  id = 20;
+		  name="krishna";
+		  salary = 30000.00;
+		System.out.println("Default Constructor");
+	}
+	
+	
+	public Employee(int id , String name)
+	{
+		this.id = id;
+		this.name = name;
+	}
+	// parameterized
+	public Employee(int id, String name, double salary)
+	{
+		this.id = id;
+		this.name  = name;
+		this.salary = salary;
+	}
+	// operations 
+	
+	
+	// instance 
+	
+	public  void  displayEmployeeDetails()
+	{
+		
+		System.out.println("ID = "+id+" Name = "+name+" Salary = "+salary);
+	}
+	
+
+}

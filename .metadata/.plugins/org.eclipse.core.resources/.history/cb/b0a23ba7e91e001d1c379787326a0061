@@ -1,0 +1,14 @@
+package com.cetpainfotech.day3.dicegame;
+
+public class DiceGame {
+
+	public static void main(String[] args) {
+		Dice d1 = new Dice();
+		Dice d2 = new Dice();
+		
+		Player p1 = new Player("Kumar");
+		Player p2 = new Player("anudeep");
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.cetpainfotech.day3;
+
+import java.util.Scanner;
+
+public class EmailDempMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Id");
+		long id = sc.nextLong();
+		
+		Email email1 = new Email(id, null, null, null, null, 0, null)
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.cetpainfotech.day3;
+
+import com.cetpainfotech.day2.Employee;
+
+public  class ObjectsCreation {
+	
+	
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		
+		
+		
+		// using constructors
+		Employee employee = new Employee();
+		
+	
+Employee e2 =(Employee)	employee.clone();
+		
+		// Cloning
+	}
+	
+}
+
+// static - static variables - static methods  , static blocks
+
+
+// is it possible to use static with class (inner classes)
+
+        

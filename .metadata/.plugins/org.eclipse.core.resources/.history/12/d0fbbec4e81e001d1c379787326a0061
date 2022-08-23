@@ -1,0 +1,8 @@
+package com.cetpainfotech.day3.dicegame;
+
+public class Dice {
+	private int faceValue;
+	
+	
+
+}

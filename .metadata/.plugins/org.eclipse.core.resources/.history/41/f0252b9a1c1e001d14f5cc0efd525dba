@@ -1,0 +1,66 @@
+package com.cetpainfotech.day2;
+
+public class Factorial {
+	
+	// define a method :
+	
+	// <access-modifier> <modifier>  returntype methodname(<parameters/arguments){ body}
+	
+	// Access- Modifiers - public(any where ) , private(in same class) , protected(in same package , and related classes), package(inside the same packaess)(No-modifier)
+       
+   // Modifiers - static , final, abstract , synchronized , default
+	
+	// returntye -> any primitives (8), String , Any Class Type, any array, nothing (void)
+public  static int  factorial(int num) // static method
+{
+	// body 
+	num= num+ 1;
+	
+	
+	int fact = 1;
+	
+	for(int i =1; i<=num; i++)
+	{
+		fact*=i;
+	}
+	
+	
+	return fact;
+}
+
+
+
+public  void display()
+{
+	isEven(34);
+}
+public boolean isEven(int num) // instance method
+{
+	
+	factorial(num);
+	
+	if(num%2==0)
+		return true;
+	
+	return false;
+}
+
+
+public void changeArray(int[] arr)
+{
+	for(int i =0;i<arr.length;i++)
+	{
+		arr[i]++;
+	}
+}
+
+
+}
+
+// sum(), getNumebr() , getInputStream()
+// write method which should take one integer as argument and should return factorail of that integer
+
+// method should return at most one value
+
+
+// define a method isEven which take any integer and retur true if even false if odd

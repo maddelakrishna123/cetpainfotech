@@ -1,0 +1,35 @@
+package com.cetpainfotech.day4;
+
+import java.util.Scanner;
+
+public class InheritanceDemo {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
+		Person  p ;
+		
+		p = new Student();
+		
+		p.printDetails();
+		
+	    
+			}
+
+}
+
+// Objects always created while run time
+// When ever you invoke any sub class constructor then its super class class will be invoked automatically(Constructor chaining)
+
+// using sub class reference you can access all its members and all public members of its super class not vice versa
+
+
+// Super class refenence can hold Sub class Object 
+
+// sup class reference can not hold the super class objects

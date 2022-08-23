@@ -1,0 +1,34 @@
+package com.cetpainfotech.day3;
+
+import java.util.Date;
+
+import com.cetpainfotech.day2.Employee;
+
+public  class ObjectsCreation {
+	
+	
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException  {
+		
+		int id = 23;
+		String name = "k";
+		
+		double sal = 234.4;
+		
+		Date date = new Date();
+		Employee emp = new Employee(id, name, sal, date);
+		
+	
+
+		
+
+	}
+	
+}
+
+// static - static variables - static methods  , static blocks
+
+
+// is it possible to use static with class (inner classes)
+
+        

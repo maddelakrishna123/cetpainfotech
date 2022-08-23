@@ -1,0 +1,15 @@
+package com.cetpainfotech.day4;
+
+public class Box {
+	
+	
+	private final double PI=3.15;
+	public Box()
+	{
+		
+	}
+
+	
+}
+
+// final variables

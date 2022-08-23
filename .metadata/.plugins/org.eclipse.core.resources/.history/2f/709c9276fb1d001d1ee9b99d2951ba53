@@ -1,0 +1,18 @@
+package com.cetpainfotech.day2;
+
+public class MethodDemo {
+
+	public static void main(String[] args) {
+		
+		
+		int n = 5;
+	// public static int  factorial(int num)	
+		
+  int fact  =   Factorial.factorial(n);
+   
+   System.out.println(fact);
+   
+   
+	}
+
+}

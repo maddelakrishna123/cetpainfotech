@@ -1,0 +1,42 @@
+package com.cetpainfotech.day3;
+
+import java.util.Date;
+
+public class Email {
+	
+	private long id;
+	private String to;
+	private String from;
+	private String subject;
+	private String content;
+	private double size;
+	private Date receiveDate;
+	
+	
+	// getters and setters
+	
+	
+	// No arg 
+	
+	public Email()
+	{
+		
+	}
+
+
+	public Email(long id, String to, String from, String subject, String content, double size, Date receiveDate) {
+		super();
+		this.id = id;
+		this.to = to;
+		this.from = from;
+		this.subject = subject;
+		this.content = content;
+		this.size = size;
+		this.receiveDate = receiveDate;
+	}
+	
+	// all arg
+	
+	
+
+}
