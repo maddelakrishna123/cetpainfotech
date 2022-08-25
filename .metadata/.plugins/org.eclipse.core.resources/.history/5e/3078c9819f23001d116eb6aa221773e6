@@ -1,0 +1,27 @@
+package com.cetpainfotech.day6;
+
+import java.util.function.Consumer;
+
+public class LamdaDemo {
+	public static void main(String[] args) {
+		
+		// public int add(int a, int b);
+		
+		
+		Adder adder =(x,y)-> x + y;
+		
+		
+		
+	int res =	adder.add(3,9);
+	
+	System.out.println(res);
+	
+	Speaker s = ()->System.out.println("Lamda expression");
+	s.speak();
+	
+	Consumer<Integer>  consumer= (Integer x)->System.out.println(x);
+	
+	consumer.accept(90);
+	}
+
+}

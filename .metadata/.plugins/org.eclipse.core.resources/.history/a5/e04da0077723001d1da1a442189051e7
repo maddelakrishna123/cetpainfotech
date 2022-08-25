@@ -1,0 +1,18 @@
+package com.cetpainfotech.day6;
+
+public class HDFCBank extends Bank {
+ 
+	public HDFCBank()
+	{
+		super();
+	}
+	
+	
+	@Override
+	public int getROI()
+	{
+		return 12;
+	}
+}
+
+// every sub class constructor should invoke super class constructor

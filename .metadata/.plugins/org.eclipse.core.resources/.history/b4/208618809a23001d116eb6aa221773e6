@@ -1,0 +1,14 @@
+package com.cetpainfotech.day6;
+
+public interface AbstractBank {
+	
+	public default void withdraw() {
+		
+	}
+	public defuault void deposit() {
+		
+	}
+	public int getROI();
+	
+
+}

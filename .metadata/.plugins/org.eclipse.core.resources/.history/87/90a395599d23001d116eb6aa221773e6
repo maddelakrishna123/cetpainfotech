@@ -1,0 +1,15 @@
+package com.cetpainfotech.day6;
+
+public class LamdaDemo {
+	public static void main(String[] args) {
+		
+		// public int add(int a, int b);
+		
+		
+		Adder adder = (int a, int b)->{
+			int c = a + b;
+			return c;
+		};
+	}
+
+}

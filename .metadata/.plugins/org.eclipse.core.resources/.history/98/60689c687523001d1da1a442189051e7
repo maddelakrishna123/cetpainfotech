@@ -1,0 +1,22 @@
+package com.cetpainfotech.day6;
+
+public abstract class Bank {
+	
+	
+	// concrete methods
+	public void withdraw()
+	{
+		
+	}
+	
+	public void deposit()
+	{
+		
+	}
+	
+	public abstract int getROI(); // ABSTRACT METHOD
+	
+
+}
+
+// abstract class can have 0 or more concrete methods

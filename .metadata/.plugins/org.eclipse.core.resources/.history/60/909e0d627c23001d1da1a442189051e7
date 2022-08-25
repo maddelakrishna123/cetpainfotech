@@ -1,0 +1,30 @@
+package com.cetpainfotech.day6;
+
+public interface Speaker {
+	
+	public static final int x=90;
+	public abstract void speak(); // abstract
+	
+	
+
+}
+
+// interfaces can not be instantiated
+
+/*
+ *  Ways to implement interfaces 
+ *  
+ *  
+ *  1) using seperate sub class
+ *  
+ *   class Teacher implements Speaker
+ *   {
+ *   
+ *   }
+ *  
+ *  
+ *  2) using anonymous inner class
+ *  
+ *  
+ *  
+ *  */

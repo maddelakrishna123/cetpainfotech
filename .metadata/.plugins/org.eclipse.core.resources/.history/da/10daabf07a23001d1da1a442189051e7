@@ -1,0 +1,8 @@
+package com.cetpainfotech.day6;
+
+public interface Speaker {
+	public int y=98;
+	public  int x=90;
+	public void speak(); // abstract
+
+}

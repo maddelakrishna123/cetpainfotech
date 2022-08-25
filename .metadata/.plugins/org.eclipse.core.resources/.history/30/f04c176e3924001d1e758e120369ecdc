@@ -1,0 +1,37 @@
+package com.cetpainfotech.day7;
+/**
+ * 
+ * @author madde
+ * 
+ * 
+ * 
+ *    Array -> group of similar data elements 
+ *    
+ *    
+ *     Why Array : 
+ *
+ */
+public class ArraysDemo1 {
+
+	public static void main(String[] args) {
+	
+		
+		
+		
+	int x;
+	x =	80;
+		
+	int y =	90;
+		
+	int z =	70;
+	
+	
+		
+		
+
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,45 @@
+package com.cetpainfotech.day6;
+
+public class InerfaceDemo {
+	public static void main(String[] args) {
+		
+		Speaker s = new Teacher();
+		
+		s.speak();
+		s.display();
+		
+	  Speaker s1 = new Speaker() {
+
+		@Override
+		public void speak() {
+			// TODO Auto-generated method stub
+			
+		}
+		  
+		  
+		  
+		  // 
+	  };
+	  
+	  
+	  s1.display();
+	  
+	  Bank b = new Bank() {
+
+		@Override
+		public int getROI() {
+			
+			return 0;
+		}
+		  
+	  };
+	  
+	b.getROI()  ;
+	
+	
+	
+	Speaker.printName("Krishna Kumar");
+	  
+	}
+
+}

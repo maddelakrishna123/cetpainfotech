@@ -1,0 +1,9 @@
+package com.cetpainfotech.day6;
+
+public class PrimeCheckerLamdaDemo {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

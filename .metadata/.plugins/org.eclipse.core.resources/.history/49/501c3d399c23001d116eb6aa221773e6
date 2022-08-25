@@ -1,0 +1,10 @@
+package com.cetpainfotech.day6;
+
+public interface Adder {
+	
+	public int add(int a, int b);
+	public int sub(int a, int b);
+
+}
+
+// functional interface

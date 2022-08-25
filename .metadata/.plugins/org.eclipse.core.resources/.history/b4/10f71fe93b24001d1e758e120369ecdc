@@ -1,0 +1,67 @@
+package com.cetpainfotech.day7;
+
+import com.cetpainfotech.day4.Employee;
+
+/**
+ * 
+ * @author madde
+ * 
+ * 
+ * 
+ *    Array -> group of similar data elements 
+ *    
+ *    
+ *     Why Array : 
+ *     
+ *     1)  to handle code complexity
+ *     2) to improve the Performance 
+ *     
+ *     
+ *     length or size : no of elements stored in the array
+ *     
+ *     position numbers or index is an integer value used to access the array elements
+ *     
+ *     index always starts from zero  and ends at size-1 
+ *     
+ *     index boundary = 0 to (length-1)  0-4
+ *     x[0] = 90
+ *     x[1] = 80
+ *     x[2] = 70
+ *     x[3] = 89
+ *     x[4] = 23
+ *     x[5] = ArrayIndexOutOfBoundsException
+ *     
+ *     In java Arrays are secondary types
+ *
+ */
+public class ArraysDemo1 {
+
+	public static void main(String[] args) {
+	
+		
+		
+	int x[]= {90,80,70,89,23};
+	
+	
+	System.out.println(x[0]);
+	System.out.println(x[1]);
+	
+	System.out.println(x[2]);
+	System.out.println(x[3]);
+	System.out.println(x[4]);
+	
+	
+	
+	
+	
+	
+	
+		
+		
+
+	}
+	
+	
+	
+
+}

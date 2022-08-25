@@ -1,0 +1,5 @@
+package com.cetpainfotech.day6;
+
+public class HDFCBank extends Bank {
+
+}

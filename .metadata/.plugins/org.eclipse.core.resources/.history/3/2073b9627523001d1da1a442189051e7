@@ -1,0 +1,20 @@
+package com.cetpainfotech.day6;
+
+public abstract class Bank {
+	
+	
+	
+	public void withdraw()
+	{
+		
+	}
+	
+	public void deposit()
+	{
+		
+	}
+	
+	public abstract int getROI(); // ABSTRACT METHOD
+	
+
+}

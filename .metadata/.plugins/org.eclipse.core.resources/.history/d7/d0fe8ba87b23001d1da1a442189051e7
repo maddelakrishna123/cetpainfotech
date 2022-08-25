@@ -1,0 +1,21 @@
+package com.cetpainfotech.day6;
+
+public interface Speaker {
+	
+	public static final int x=90;
+	public abstract void speak(); // abstract
+	
+	
+
+}
+
+// interfaces can not be instantiated
+
+/*
+ *  Way 
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  */
