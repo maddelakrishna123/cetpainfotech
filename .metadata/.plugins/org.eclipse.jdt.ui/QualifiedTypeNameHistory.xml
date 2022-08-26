@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="com.cetpainfotech.day4.Manager"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day4.Student"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day4.InheritanceDemo"/>
-    <fullyQualifiedTypeName name="com.cetpainfotech.day4.Employee"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day4.Person"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day5.Customer"/>
@@ -24,10 +23,15 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day6.ICICIBank"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day6.HDFCBank"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day6.Bank"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day6.Speaker"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="java.lang.constant.ClassDesc"/>
     <fullyQualifiedTypeName name="java.lang.Cloneable"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.cetpainfotech.day7.MobileNumberValidator"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="com.cetpainfotech.day4.Employee"/>
 </qualifiedTypeNameHistroy>

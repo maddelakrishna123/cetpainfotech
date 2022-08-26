@@ -1,0 +1,12 @@
+package com.cetpainfotech.day7;
+
+public class StringDemo2 {
+
+	public static void main(String[] args) {
+	
+		
+		 String str= "101-krishna-20000-35";
+
+	}
+
+}

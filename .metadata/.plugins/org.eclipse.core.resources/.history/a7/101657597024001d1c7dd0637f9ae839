@@ -1,0 +1,18 @@
+package com.cetpainfotech.day7;
+
+import com.cetpainfotech.day4.Employee;
+
+public class StringDemo2 {
+
+	public static void main(String[] args) {
+	
+		
+		 String str= "101-krishna-20000-35";
+		 
+		 
+String[] details=		 str.split("-");
+		 Employee emp = new Employee(0, str, 0, 0);
+
+	}
+
+}

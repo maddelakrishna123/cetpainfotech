@@ -1,0 +1,16 @@
+package com.cetpainfotech.day8;
+
+public class StringDemo1 {
+
+	public static void main(String[] args) {
+		
+		String str = "krishna";
+		
+		StringBuffer sb = new StringBuffer(str);
+		sb.append("kumar" 0,3 );
+		System.out.println(sb);
+		
+		
+	}
+
+}

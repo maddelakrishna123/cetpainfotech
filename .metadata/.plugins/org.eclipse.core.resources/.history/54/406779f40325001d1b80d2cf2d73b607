@@ -1,0 +1,18 @@
+package com.cetpainfotech.day8;
+
+public class StringDemo1 {
+
+	public static void main(String[] args) {
+		
+		// String is immutable
+		
+		String str= "java";
+		String str1 =str.toUpperCase();
+		
+		System.out.println(str);
+		
+		
+		
+	}
+
+}

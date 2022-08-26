@@ -1,0 +1,23 @@
+package com.cetpainfotech.day8;
+
+public class StringDemo1 {
+
+	public static void main(String[] args) {
+		
+		String str = "krishna";
+		
+		StringBuffer sb = new StringBuffer(str);
+		sb.insert(0, "maddela");
+		System.out.println(sb);
+		sb.insert(3, 78);
+		
+		System.out.println(sb);
+		
+		
+	String str1=	String.valueOf(12);
+	
+	System.out.println(str1);
+		
+	}
+
+}
