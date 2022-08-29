@@ -1,0 +1,45 @@
+package com.cetpainfotech.day8.assesment;
+
+public class EmployeeBo {
+	
+	public static boolean findEmployeeByEmail(Employee[] employees, String email)
+	{
+		
+		  for(Employee emp:employees)
+		  {
+			  if(emp.getEmail().equals(email))
+			  {
+				  return true;
+			  }
+		  }
+		
+		
+		return false;
+	}
+
+	public static Employee findEmployeeByMobile(Employee[] employees, String mobile)
+	{
+		
+		  for(int i= 0; i<employees.length;i++)
+		  {
+			  if(employees[i].getMobile().equals(mobile))
+			  {
+				  return employees[i];
+			  }
+		  }
+		
+		
+		return null;
+	}
+	
+	
+	
+	public static Address findAddress(Employee[] employees , int empid)
+	
+	{
+		
+		
+		
+	}
+	
+}

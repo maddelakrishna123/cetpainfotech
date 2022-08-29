@@ -1,0 +1,36 @@
+package com.cetpainfotech.day9;
+
+import java.util.Scanner;
+
+import com.cetpainfotech.day6.Bank;
+
+public class ExceptionDemo3 {
+	
+	
+	
+	public static Bank getBank(String bankname) 
+	{
+		
+		try
+		{
+		Class.forName(bankname);
+		}catch (ClassNotFoundException e) {
+			System.out.println("Invalid class Name");
+		}
+		return null;
+	}
+	
+	
+
+	public static void main(String[] args)   {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String className = sc.next();
+		
+		
+		getBank(className);
+
+	}
+
+}

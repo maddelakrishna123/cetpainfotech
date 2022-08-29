@@ -1,0 +1,59 @@
+package com.cetpainfotech.day8.assesment;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter How many Employees do you want to create ");
+		
+		int size = sc.nextInt();
+		
+		Employee[] employees = new Employee[size];
+		sc.nextLine();
+		
+		for(int  i=0; i<employees.length;i++)
+		{
+			System.out.println("Enter Next Employees ");
+			
+			
+			String emps = sc.nextLine();
+			
+			String[] empDetails = emps.split(",");
+			
+			
+			Address address  = new Address();
+			address.setCity(empDetails[6]);
+			address.setState(empDetails[7]);
+			address.setCountry(empDetails[8]);
+			address.setPincode(empDetails[9]);
+			address.setType(empDetails[10]);
+			
+			Employee e = new Employee();
+			e.setId(Integer.parseInt(empDetails[0]));
+			e.setName(empDetails[1]);
+			e.setSalary(Double.parseDouble(empDetails[2]));
+			e.setEmail(empDetails[4]);
+			e.setMobile(empDetails[5]);
+			e.setAddress(address);
+			
+			employees[i] = e;
+		}
+		
+		
+		
+		
+		while(true)
+		{
+			System.out.println("Enter Option");
+			
+			
+		}
+
+	}
+
+}

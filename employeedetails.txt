@@ -1,0 +1,6 @@
+101,krishna,30000,24,krishna@gmail.com,85000493754,Hyd,TS,IN,500086,Residence
+102,arpita kumari,30000,23,arpita@gmail.con,8500493751,Hyd,TS,IN,500086,Residence
+103,abhishek,450000,22,abhikek@gmail.com,8500493752,Hyd,TS,IN,500086,Residence
+104,shubham sharma,34000,21,shubham@gmail.com,8500493755,Hyd,TS,IN,500086,Residence
+105,Jatin Kumar,440000,24,jatin@yahoo.co.in,8500493765,Hyd,TS,IN,500086,Residence
+106,Jasleen Kaur,35000,23,jasleen@gmail.com,8500493757,Hyd,TS,IN,500086,Residence

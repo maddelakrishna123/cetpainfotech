@@ -29,9 +29,14 @@
     <fullyQualifiedTypeName name="java.lang.constant.ClassDesc"/>
     <fullyQualifiedTypeName name="java.lang.Cloneable"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day7.MobileNumberValidator"/>
     <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.cetpainfotech.day4.Employee"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.cetpainfotech.day8.assesment.Employee"/>
+    <fullyQualifiedTypeName name="com.cetpainfotech.day8.assesment.Address"/>
+    <fullyQualifiedTypeName name="com.cetpainfotech.day8.assesment.EmployeeBo"/>
 </qualifiedTypeNameHistroy>

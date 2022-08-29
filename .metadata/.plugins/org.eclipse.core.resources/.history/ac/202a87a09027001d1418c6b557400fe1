@@ -1,0 +1,12 @@
+package com.cetpainfotech.day9;
+
+import com.cetpainfotech.day4.Employee;
+
+public class ExceptionDemo5 {
+	public static void main(String[] args) {
+		
+		
+		Employee emp = new Employee(0, null, 0, 0);
+	}
+
+}

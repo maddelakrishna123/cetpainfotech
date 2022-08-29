@@ -1,0 +1,8 @@
+package com.cetpainfotech.day9;
+
+public class ExceptionDemo5 {
+	public static void main(String[] args) {
+		
+	}
+
+}

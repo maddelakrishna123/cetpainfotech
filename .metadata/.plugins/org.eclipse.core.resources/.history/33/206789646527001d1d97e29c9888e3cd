@@ -1,0 +1,16 @@
+package com.cetpainfotech.day9;
+
+import com.cetpainfotech.day6.Bank;
+
+public class CheckedDemo {
+
+	public static void main(String[] args) {
+		
+		
+		Bank b = new Bank();
+		
+		
+
+	}
+
+}

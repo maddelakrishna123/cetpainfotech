@@ -1,0 +1,12 @@
+package com.cetpainfotech.day8.assesment;
+
+public class EmployeeBo {
+	
+	public static boolean findEmployeeByEmail(Employee[] employees, String emai)
+	{
+		
+		
+		return false;
+	}
+
+}

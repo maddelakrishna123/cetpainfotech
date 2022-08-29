@@ -1,0 +1,37 @@
+package com.cetpainfotech.day9;
+
+import java.util.Scanner;
+
+public class ExceptionDemo1 {
+	
+	public static void main(String[] args) {
+		
+		
+		int salary  = 90000;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int abs  = sc.nextInt();
+		int no_of_days_in_month = sc.nextInt();
+		
+		double per_day_salary = salary/no_of_days_in_month;
+	// Arithemetic 	
+		double net_salary = salary-(per_day_salary*abs);
+		System.out.println(net_salary);
+		
+		sc.close();
+		
+		
+		
+	}
+
+}
+
+
+// Exception is an instance of  a class
+
+// Exceptions are Types in class
+
+// unchecked and Checked
+
+

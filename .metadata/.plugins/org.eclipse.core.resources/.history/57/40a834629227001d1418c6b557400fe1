@@ -1,0 +1,17 @@
+package com.cetpainfotech.day9;
+
+import java.util.Scanner;
+
+import com.cetpainfotech.day4.Employee;
+
+public class ExceptionDemo5 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String emp = sc.nextLine();
+		
+		String[] depatils = emp.split(",");
+		Employee emp = new Employee(0, null, 0, 0);
+	}
+
+}

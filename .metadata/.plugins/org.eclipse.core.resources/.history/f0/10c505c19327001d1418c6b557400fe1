@@ -1,0 +1,7 @@
+package com.cetpainfotech.day9;
+
+public class InvalidSalaryException extends Exception {
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.cetpainfotech.day9;
+
+public class ExceptionDemo4 {
+	public static void main(String[] args) {
+		
+		try
+		{
+		 }catch (ArithmeticException e) {
+			
+			 System.out.println("Devide by zero");
+		}
+		
+	}
+
+}
