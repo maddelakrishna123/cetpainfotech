@@ -1,11 +1,17 @@
 package com.cetpainfotech.day12;
 
-public class Customer {
+public  class Customer {
 
 	
 	int amount=10000;    
     
-	synchronized void withdraw(int amount){    
+	
+
+
+	synchronized void withdraw(int amount){  
+		
+		
+		
 	System.out.println("going to withdraw...");    
 	    
 	if(this.amount<amount){    

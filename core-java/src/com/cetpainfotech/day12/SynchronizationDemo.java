@@ -12,11 +12,12 @@ public class SynchronizationDemo {
 		SampleThread st = new SampleThread();
 		
 		st.setTable(table);
-		st.setPriority(Thread.MAX_PRIORITY);
+		//st.setPriority(Thread.MAX_PRIORITY);
 		MyRunnable mr = new MyRunnable();
 		mr.setTable(table);
 		Thread t = new Thread(mr);
-		
+		st.setDaemon(true);
+		st.setPriority(Thread.MIN_PRIORITY);
 		st.start();
 		t.start();
 		
