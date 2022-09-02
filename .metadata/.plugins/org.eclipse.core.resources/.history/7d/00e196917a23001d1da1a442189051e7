@@ -1,7 +1,0 @@
-package com.cetpainfotech.day6;
-
-public interface Speaker {
-	
-	private void speak(); // abstract
-
-}

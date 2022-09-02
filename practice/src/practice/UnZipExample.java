@@ -19,7 +19,7 @@ public class UnZipExample {
 		while(entry!=null)
 		{
 			String filename = entry.getName();
-			FileOutputStream fos = new FileOutputStream(filename);
+			FileOutputStream fos = new FileOutputStream("D:\\"+filename);
 			
 			
 			int length;

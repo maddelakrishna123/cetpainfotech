@@ -1,7 +1,0 @@
-package com.cetpainfotech.day7;
-
-public interface MobileNumberValidator {
-	
-	
-
-}
