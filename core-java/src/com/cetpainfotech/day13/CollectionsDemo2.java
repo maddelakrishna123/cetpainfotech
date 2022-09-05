@@ -57,7 +57,26 @@ public class CollectionsDemo2 {
 	}
 	
 	
-public static List<String> getEmailsOfEmployees(List<Employee> emplpyees)	
+public static List<String> getEmailsOfEmployees(List<Employee> employees)	
+{
+	
+	     List<String> emailsList = new ArrayList<String>();
+	     
+	     
+	     for(Employee e:employees)
+	     {
+	    	 emailsList.add(e.getEmail());
+	     }
+	
+	
+	return emailsList;
+}
+
+
+
+
+
+public static Employee findEmployee(List<Employee> empList, int eid)
 {
 	
 	
@@ -65,7 +84,20 @@ public static List<String> getEmailsOfEmployees(List<Employee> emplpyees)
 	return null;
 }
 	
+
+
+
+public List<Employee> findEmployee(List<Employee> empList, double salaryFrom, double slaryTo)
+{
 	
+	
+	
+	return null;
+}
+
+
+
+
 	
 	
 	
@@ -79,6 +111,11 @@ List<Employee> emps =		loadEmployees(filepath);
 
 
 System.out.println(emps);
+
+
+List<String> email =getEmailsOfEmployees(emps);
+
+System.out.println(email);
 		
 		
 	}

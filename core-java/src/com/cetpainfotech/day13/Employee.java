@@ -1,8 +1,8 @@
 package com.cetpainfotech.day13;
 
 import java.io.Serializable;
-
-public class Employee  implements Serializable{
+// comparable ,
+public class Employee  implements Serializable, Comparable<Employee>{
 	
 	private int id;
 	private String name;
@@ -78,8 +78,31 @@ public class Employee  implements Serializable{
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", salary=" + salary + "]";
 	}
+
+	@Override
+	public int compareTo(Employee o){  // 101 , 102
+		
+		 if(this.id > o.id)
+		 {
+			return 1; 
+		 }
+		 else
+			  if (this.id < o.id)
+			  {
+				  return -1;
+			  }else
+			  {
+		return 0;
+			  }
+	}
 	
 	
 
 	
 }
+
+
+// Natural Sorting of Numbers - Ascending
+//Natural Sorting of String - alphabetical Order
+
+// // Natural Sorting of Employee - ascending order of their id
