@@ -9,6 +9,8 @@ public class Employee  implements Serializable, Comparable<Employee>{
 	private String email;
 	private double salary;
 	
+	private String username;
+	
 	private transient String password;
 	
 	private  static String companyName ="Abc Company";
@@ -55,6 +57,14 @@ public class Employee  implements Serializable, Comparable<Employee>{
 
 	public static String getCompanyName() {
 		return companyName;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public static void setCompanyName(String companyName) {
