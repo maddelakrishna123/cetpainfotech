@@ -1,7 +1,10 @@
 package com.cetpainfotech.day17;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.Properties;
 
 public class DBConnection {
 	
@@ -12,14 +15,18 @@ public class DBConnection {
 		
 		try
 		{
-			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			String url="jdbc:mysql://localhost:3306/trangile";  
+			Properties props = new Properties();
+			props.load(new FileInputStream(new File("dbconfig.properties")));
 			
-			String dbusername ="root";
-			String dbpassword = "root";
+			//Class.forName("com.mysql.cj.jdbc.Driver");  // different from oracle
+			Class.forName(props.getProperty("driver")); 
+			//String url="jdbc:mysql://localhost:3306/trangile";  
 			
-			 con = DriverManager.getConnection(url, dbusername, dbpassword);
+			//String dbusername ="root";
+			//String dbpassword = "root";
+			
+			 con = DriverManager.getConnection(props.getProperty("url"),props.getProperty("dbusername") , props.getProperty("dbpassword"));
 			
 			
 		}catch (Exception e) {

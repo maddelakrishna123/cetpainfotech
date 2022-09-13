@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+
+   <link rel="stylesheet" href="style.css" >
+
+   
+</head>
+<body>
+    <div class="header">
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">SignUp</a></li>
+   </ul>
+       
+    </div>
+
+
+    <div class="login">
+        <h4>Login Form</h4>
+        <form action="user-login" onsubmit="return validateLogin()">
+            <input type="text" placeholder="username" id="username" name="username">
+            <input type="password" placeholder="password" id="password" name="password">
+            <input type="submit">
+        </form>
+
+        No Account <a href="register.html">Click</a> to register
+    </div>
+
+    <script type="text/javascript">
+
+        function validateLogin()
+        {
+
+
+             var username = document.getElementById("username").value;
+             var password = document.getElementById("password").value;
+
+
+              if(username=='' || password=='')
+              {
+                alert("User Name and Password should not be empty");
+            return false;
+              }
+
+              return true;
+        }
+
+
+
+    </script>
+</body>
+</html>

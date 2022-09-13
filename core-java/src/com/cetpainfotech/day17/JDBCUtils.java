@@ -49,6 +49,8 @@ public class JDBCUtils {
 		
 		
 		//Statement  st = conn.createStatement();
+		
+		//st.executeu
 		 
 		 PreparedStatement ps = conn.prepareStatement(query);
 		

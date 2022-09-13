@@ -1,0 +1,55 @@
+.header
+{
+    height: 90px;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+li {
+    display: inline;
+    margin: 3px;
+}
+li a{
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+    text-decoration: none;
+}
+.about
+{
+    color: brown;
+}
+
+.login
+{
+    margin: auto;
+    width: 500px;
+    margin-top: 30px;
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+    
+   
+}
+
+form{
+    margin-left: 130px;
+}
+.login h4{
+    font-family: cursive;
+    color: brown;
+}
+
+.login input 
+{
+    display: block;
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: none;
+   
+}
