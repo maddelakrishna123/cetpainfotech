@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class ProfileServlet
@@ -24,21 +25,10 @@ public class ProfileServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	
-	
-		// read the input from request
-		
-	String id =	request.getParameter("empid");
-		
-		// fetch data from db
-		
-	
-	
-		//create response 
-	
-	
+	//String username =	request.getParameter("username");
+	HttpSession session = request.getSession();
+	String username =	(String)session.getAttribute("username");
  PrintWriter pw =	  response.getWriter();
  
  
@@ -49,9 +39,9 @@ public class ProfileServlet extends HttpServlet {
 	
 	 Class.forName("com.mysql.cj.jdbc.Driver");
 	 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trangile","root","root");
- PreparedStatement ps = con.prepareStatement("select * from employee where eid =?");
- ps.setInt(1, Integer.parseInt(id));
- 
+ PreparedStatement ps = con.prepareStatement("select * from employee where usermame =?");
+ //ps.setInt(1, Integer.parseInt(id));
+ ps.setString(1, username);
  ResultSet rs = ps.executeQuery();
  
   if(rs.next())

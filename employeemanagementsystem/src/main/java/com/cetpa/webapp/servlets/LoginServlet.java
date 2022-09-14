@@ -7,12 +7,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 @WebServlet(urlPatterns = {"/login"},
 initParams = { 
 		@WebInitParam(name = "driver", value = "com.mysql.cj.jdbc.Driver"), 
@@ -25,7 +27,7 @@ public class LoginServlet  extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		
+		resp.setContentType("text/html");
 		String username = req.getParameter("username");
 		
 		String password = req.getParameter("password");
@@ -44,12 +46,27 @@ Class.forName(getInitParameter("driver"));
 			ResultSet rs = ps.executeQuery();
 			if(rs.next())
 			{
-				out.println("Hello "+username);
+				//out.println("Hello "+username);
+				
+				//resp.sendRedirect("employee-home?username="+username);
+				
+				//
+				
+				HttpSession session = req.getSession();
+				
+				session.setAttribute("username", username);
+				req.setAttribute("email", rs.getString(3));
+				
+				RequestDispatcher rd = req.getRequestDispatcher("employee-home");
+				
+				rd.forward(req, resp);
 			}
 			else
 			{
 				out.println("Invalid Username or password");
+				RequestDispatcher rd = req.getRequestDispatcher("login.html");
 			
+			rd.include(req, resp);
 			}
 			
 			
