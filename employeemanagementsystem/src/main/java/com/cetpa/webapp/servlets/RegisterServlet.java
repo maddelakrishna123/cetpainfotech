@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.cetpa.webapp.db.DBConnection;
+
 /**
  * Servlet implementation class RegisterServlet
  */
@@ -49,9 +51,12 @@ public class RegisterServlet extends HttpServlet {
 		
 		try
 		{
-			Class.forName(getInitParameter("driver"));
+			//Class.forName(getInitParameter("driver"));
 			
-			Connection con = DriverManager.getConnection(getInitParameter("url"), getInitParameter("username"), getInitParameter("password"));
+			//Connection con = DriverManager.getConnection(getInitParameter("url"), getInitParameter("username"), getInitParameter("password"));
+			
+			Connection con = DBConnection.getConn(getServletContext());
+			
 			PreparedStatement ps = con.prepareStatement("insert into employee values(?,?,?,?,?,?,?)");
 			
 			ps.setInt(1, Integer.parseInt(eid));

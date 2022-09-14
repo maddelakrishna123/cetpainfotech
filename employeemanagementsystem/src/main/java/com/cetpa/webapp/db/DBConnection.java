@@ -6,38 +6,38 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Properties;
 
+import javax.servlet.ServletContext;
+
 public class DBConnection {
 	
 private static Connection con = null;
 	
-	static 
+	
+	
+	public static Connection getConn(ServletContext context)
 	{
 		
+		
+		
+		//System.out.println(context.getAttribute("driver"));
+	/*	
+		String driver = context.getInitParameter("driver");
+		String url = context.getInitParameter("url");
+		String dbusername = context.getInitParameter("username");
+		String dbpassword = context.getInitParameter("password");
+		*/
+		String driver =(String) context.getAttribute("driver");
+		String url = (String) context.getAttribute("url");
+		String dbusername = (String) context.getAttribute("username");
+		String dbpassword = (String) context.getAttribute("password");
 		try
 		{
 			
-			Properties props = new Properties();
-			props.load(new FileInputStream(new File("dbconfig.properties")));
-			
-			//Class.forName("com.mysql.cj.jdbc.Driver");  // different from oracle
-			Class.forName(props.getProperty("driver")); 
-			//String url="jdbc:mysql://localhost:3306/trangile";  
-			
-			//String dbusername ="root";
-			//String dbpassword = "root";
-			
-			 con = DriverManager.getConnection(props.getProperty("url"),props.getProperty("dbusername") , props.getProperty("dbpassword"));
-			
-			
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, dbusername, dbpassword);
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-	
-	
-	
-	public static Connection getConn()
-	{
 		
 		
 	return con;

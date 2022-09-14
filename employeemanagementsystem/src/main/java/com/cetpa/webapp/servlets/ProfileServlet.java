@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cetpa.webapp.db.DBConnection;
+
 /**
  * Servlet implementation class ProfileServlet
  */
@@ -37,8 +39,9 @@ public class ProfileServlet extends HttpServlet {
  try
  {
 	
-	 Class.forName("com.mysql.cj.jdbc.Driver");
-	 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trangile","root","root");
+	 Connection con = DBConnection.getConn(getServletContext());
+	 //Class.forName("com.mysql.cj.jdbc.Driver");
+	 //Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trangile","root","root");
  PreparedStatement ps = con.prepareStatement("select * from employee where usermame =?");
  //ps.setInt(1, Integer.parseInt(id));
  ps.setString(1, username);
