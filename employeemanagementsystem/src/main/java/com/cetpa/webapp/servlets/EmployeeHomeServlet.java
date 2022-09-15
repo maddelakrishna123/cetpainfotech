@@ -22,7 +22,7 @@ public class EmployeeHomeServlet extends HttpServlet {
 		
 		out.println("<html><head><title>Employee Home Page </title></head>");
 		
-		out.println("<body><div> Welcome "+req.getParameter("username")+" Email "+email);
+		out.println("<body><div style='text-align:right'> Welcome "+req.getParameter("username")+" Email "+email);
 		out.println("<a href='logout'>logout</a>");
 		
 		out.println("</div><div>");

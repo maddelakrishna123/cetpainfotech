@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,9 +50,13 @@ public class ProfileServlet extends HttpServlet {
  
   if(rs.next())
   {
-	  pw.println("Id ="+rs.getInt(1));
+	 String data = rs.getInt(1)+"-"+rs.getString(2)+"-"+rs.getString(3);
+	 
+	   request.setAttribute("data", data);
+	 
+	 RequestDispatcher rd = request.getRequestDispatcher("emplopyeeprofile.jsp");
+	 rd.forward(request, response);
 	  
-	  pw.println("Name ="+rs.getString(2));
   }
   else
   {

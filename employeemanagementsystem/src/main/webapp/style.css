@@ -34,3 +34,16 @@ input
 	outline: none;
 	margin: 4px;
 }
+
+.header
+{
+	height: 90px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: blue;
+	color:white;
+}
+a {
+	color:red;
+}
