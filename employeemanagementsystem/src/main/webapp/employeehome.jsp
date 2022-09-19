@@ -1,3 +1,6 @@
+
+
+<%@page import="java.util.Scanner"%>
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -15,6 +18,7 @@
 
 
 <%
+
 String username = request.getParameter("username");
 %>
 <div class="header" style="text-align: right;">

@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +14,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.cetpa.webapp.beans.Employee;
+import com.cetpa.webapp.dao.EmployeeDao;
+import com.cetpa.webapp.dao.EmployeeDaoImpl;
 import com.cetpa.webapp.db.DBConnection;
+import com.cetpa.webapp.services.EmployeeService;
+import com.cetpa.webapp.services.EmployeeServiceImpl;
 
 /**
  * Servlet implementation class RegisterServlet
@@ -51,6 +57,37 @@ public class RegisterServlet extends HttpServlet {
 		
 		try
 		{
+			
+			EmployeeDao dao = new EmployeeDaoImpl();
+			EmployeeService service = new EmployeeServiceImpl(dao);
+			
+			Employee emp = new Employee();
+			emp.setId(Integer.parseInt(eid));
+
+			emp.setName(fullname);
+			emp.setEmail(email);
+			emp.setUsername(username);
+			emp.setPassword(password);
+			emp.setSalary(Double.parseDouble(salary));
+			emp.setMobile(mobile);
+			 if(service.createNewEmployee(emp))
+			 {
+				 
+				 request.setAttribute("status", "yes");
+				 RequestDispatcher rd = request.getRequestDispatcher("message.jsp");
+				 rd.forward(request, response);
+				 
+			 }
+			 else
+			 {
+				 request.setAttribute("status", "no");
+				 RequestDispatcher rd = request.getRequestDispatcher("message.jsp");
+				 rd.forward(request, response);
+			 }
+			
+			
+			
+			/*
 			//Class.forName(getInitParameter("driver"));
 			
 			//Connection con = DriverManager.getConnection(getInitParameter("url"), getInitParameter("username"), getInitParameter("password"));
@@ -75,6 +112,8 @@ public class RegisterServlet extends HttpServlet {
 			
 				out.print("Registered sucessfully");
 			}
+			
+			*/
 			
 		}catch (Exception e) {
 			//e.printStackTrace();

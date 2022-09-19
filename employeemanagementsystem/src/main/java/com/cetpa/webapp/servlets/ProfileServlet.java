@@ -15,7 +15,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.cetpa.webapp.beans.Employee;
+import com.cetpa.webapp.dao.EmployeeDao;
+import com.cetpa.webapp.dao.EmployeeDaoImpl;
 import com.cetpa.webapp.db.DBConnection;
+import com.cetpa.webapp.services.EmployeeService;
+import com.cetpa.webapp.services.EmployeeServiceImpl;
 
 /**
  * Servlet implementation class ProfileServlet
@@ -32,6 +37,7 @@ public class ProfileServlet extends HttpServlet {
 	//String username =	request.getParameter("username");
 	HttpSession session = request.getSession();
 	String username =	(String)session.getAttribute("username");
+	System.out.println(username);
  PrintWriter pw =	  response.getWriter();
  
  
@@ -39,7 +45,17 @@ public class ProfileServlet extends HttpServlet {
  
  try
  {
-	
+	 
+	 
+	 EmployeeDao dao = new EmployeeDaoImpl();
+		EmployeeService service = new EmployeeServiceImpl(dao);
+		
+		Employee emp = service.getEmployeeByUsername(username);
+	System.out.println(emp);
+		request.setAttribute("emp", emp);
+		 RequestDispatcher rd = request.getRequestDispatcher("emplopyeeprofile.jsp");
+		 rd.forward(request, response);
+	 /*
 	 Connection con = DBConnection.getConn(getServletContext());
 	 //Class.forName("com.mysql.cj.jdbc.Driver");
 	 //Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trangile","root","root");
@@ -62,6 +78,10 @@ public class ProfileServlet extends HttpServlet {
   {
 	  pw.println("Employee details not Found");
   }
+  
+  
+  */
+  
  }
 catch (Exception e) {
 	e.printStackTrace();

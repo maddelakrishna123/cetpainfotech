@@ -7,27 +7,50 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%! 
-int x =90;
-int y = 100;
-%> <!--  Declarative Elements -->
+
 <h1>Employee Profile</h1>
 <!--  scriptlet -->
-<%
 
 
- String data =(String) request.getAttribute("data");
+<table>
+<tr>
 
-String[] details = data.split("-");
-for(String d:details)
-{
-	%>
-	
-	<h1> <%=x+y %></h1>
-	<% 
-}
-%>
+<td>Id</td>
+<td>${emp.id}</td>
 
+</tr>
+<tr>
+
+<td>Name</td>
+<td>${emp.name}</td>
+
+</tr>
+<tr>
+
+<td>Email</td>
+<td>${emp.email}</td>
+
+</tr>
+<tr>
+
+<td>Username</td>
+<td>${emp.username}</td>
+
+</tr>
+<tr>
+
+<td>Salary</td>
+<td>${emp.salary}</td>
+
+</tr>
+<tr>
+
+<td>Mobile</td>
+<td>${emp.mobile}</td>
+
+</tr>
+
+</table>
 
 </body>
 </html>

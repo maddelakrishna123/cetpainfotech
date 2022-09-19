@@ -61,7 +61,7 @@ public class LoginServlet  extends HttpServlet{
 			
 			Connection con = DBConnection.getConn(context);
 			
-			PreparedStatement ps = con.prepareStatement("select * from employee where usermame=? and password=?");
+			PreparedStatement ps = con.prepareStatement("select * from employee where username=? and password=?");
 			ps.setString(1, username);
 			ps.setString(2, password);
 			
