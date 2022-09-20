@@ -3,6 +3,11 @@
 	<persistence-unit name="jpademo1">
 	
 	 <class>com.kk.jpa.Employee</class>
+	 <class>com.kk.jpa.Address</class>
+	 
+	 <class>com.kk.jpa.inheritancemapping.Employee12</class>
+	  <class>com.kk.jpa.inheritancemapping.RegularEmployee</class>
+	   <class>com.kk.jpa.inheritancemapping.ContractEmployee</class>
     <properties>
          <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/trangile"/>
          <property name="javax.persistence.jdbc.user" value="root"/>

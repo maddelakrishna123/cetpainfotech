@@ -6,6 +6,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
 
 public class Demo {
 
@@ -13,26 +16,27 @@ public class Demo {
 	
 		 EntityManagerFactory factory = Persistence.createEntityManagerFactory("Eclipselink_JPA");
 		 EntityManager manager = factory.createEntityManager();
-		 Employee em =	 manager.find(Employee.class, 101);
+		
 		 
-		 System.out.println(em);
-	/*Employee em =	 manager.find(Employee.class, 101);
-	manager.getTransaction().begin();
-	em.setMobile("8500493754");
-	System.out.println(em);
-	manager.getTransaction().commit();*/
-	/*	Query query = manager.createQuery("from Employee e");
+		// Query q = manager.createQuery("select e from Employee e where e.eid=1");
+	//Employee e =(Employee)	 q.getSingleResult();
+	//System.out.println(e);
+		 //TypedQuery<Employee> tq = manager.createQuery("select e from Employee e where e.eid = 1", Employee.class);
 		 
-	List list =	 query.getResultList();
-		// System.out.println(list);
 		 
-		 for(Object o :list)
-		 {
-			 Employee emp = (Employee) o;
-			 
-			 System.out.println(emp);
-		 }
-	*/	 
+		/// TypedQuery<Employee> tq = manager.createNamedQuery("select_employees", Employee.class);
+		// Employee e = tq.getSingleResult();
+		 //System.out.println(e);
+		// List<Employee> empList = tq.getResultList();
+		//empList.stream().forEach(t->System.out.println(t));
+		// tq.getResultStream()
+		 
+		 CriteriaBuilder cb = manager.getCriteriaBuilder();
+		 
+		 CriteriaQuery<Employee> empQ = cb.createQuery(Employee.class);
+		 empQ.from(Employee.class);
+		 
+		 
 	}
 
 }

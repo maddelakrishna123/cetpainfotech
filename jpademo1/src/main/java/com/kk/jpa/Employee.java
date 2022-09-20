@@ -1,14 +1,21 @@
 package com.kk.jpa;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.annotation.processing.Generated;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="employee")
+
+@NamedQuery(name="select_all_employees",query = "select e from Employee e")
 public class Employee {
 	@Id
 	@Column(name="eid")
@@ -21,6 +28,9 @@ public class Employee {
 	private String username;
 	private String password;
 	private double salary;
+	
+	@ElementCollection
+	private List<Address> addressList = new ArrayList<Address>();
 	
 	private int age;
 	public int getId() {
@@ -70,6 +80,31 @@ public class Employee {
 		return age;
 	}
 	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+	
+	
+	public List<Address> getAddressList() {
+		return addressList;
+	}
+	public void setAddressList(List<Address> addressList) {
+		this.addressList = addressList;
+	}
+	
+	
+	public Employee(int id, String name, String email, String mobile, String username, String password, double salary,
+			List<Address> addressList, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.mobile = mobile;
+		this.username = username;
+		this.password = password;
+		this.salary = salary;
+		this.addressList = addressList;
 		this.age = age;
 	}
 	public Employee(int id, String name, String email, String mobile, String username, String password, double salary) {

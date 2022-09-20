@@ -3,10 +3,12 @@ package com.kk.jpa;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table
+@NamedQuery(name="select_employees",query = "select e from Employee e")
 public class Employee {
 	@Id
 	@GeneratedValue
