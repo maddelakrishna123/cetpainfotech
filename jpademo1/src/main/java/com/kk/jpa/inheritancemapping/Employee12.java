@@ -1,6 +1,8 @@
 package com.kk.jpa.inheritancemapping;
 
 import javax.annotation.processing.Generated;
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,8 +12,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="emp001")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-
+@Inheritance(strategy = InheritanceType.JOINED)
+//@DiscriminatorColumn(name = "empType",discriminatorType=DiscriminatorType.STRING)
 public class Employee12 {
 	@Id
 	 @GeneratedValue

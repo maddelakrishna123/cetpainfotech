@@ -1,8 +1,10 @@
 package com.kk.jpa.inheritancemapping;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
+//@DiscriminatorValue(value = "reg_emp")
 public class RegularEmployee extends Employee12{
 	
 	

@@ -1,8 +1,10 @@
 package com.kk.jpa.inheritancemapping;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
+//@DiscriminatorValue(value="con_emp")
 public class ContractEmployee extends Employee12{
 	
 	private int hoursworked;
