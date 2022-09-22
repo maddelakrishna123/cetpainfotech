@@ -28,24 +28,7 @@ public class App
     	
     
     	
-    	
-   // Query q = session.createQuery(null, Product.class);
-    	
-    	//System.out.println(q.getSingleResult());
-    	
-    	// JPQL -// HQL
- 
-    	//Transaction tx = session.beginTransaction(); // save , update , delete
-    	//Product p = new Product(6005, "Desktop", "Dell  4GB 512 SSD", 30000);
-    	
-    	//session.saveOrUpdate(p);
-    	
-		/*
-		 * Product p = session.get(Product.class, 1); session.delete(p); tx.commit();
-		 */
-    	// session.close();
-    	
-    	
+       	
     }
 }
 // get , load  - single

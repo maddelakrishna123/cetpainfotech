@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--  SingleTon -->
+       <bean name="emp" class="com.trangile.spring.core.models.Employee" scope="prototype">
+       <!-- Setter -->
+       <property name="id" value="101"/>
+        <property name="name" value="Krishna"/>
+         <property name="email" value="krishna@gmail.com"/>
+          <property name="mobile" value="8500493754"/>
+           <property name="username" value="krishna123"/>
+            <property name="password" value="123456"/>
+             <property name="salary" value="20000"/>
+       </bean>
+       
+       <alias name="emp" alias="emp01"/>
+   <bean name="emp1" class="com.trangile.spring.core.models.Employee">
+        <constructor-arg index="2" type="java.lang.String" value="jatin@gmail.com"/>
+       <constructor-arg index="0" type="int" value="102"/>
+       <constructor-arg index="1" type="java.lang.String" value="Jatin kumar"/>
+        <constructor-arg index="5" type="java.lang.String" value="12345"/>
+       <constructor-arg index="3" type="java.lang.String" value="8877665511"/>
+       <constructor-arg index="4" type="java.lang.String" value="jatin123"/>
+     
+       <constructor-arg index="6" type="double" value="40000"/>
+       </bean> 
+       
+       <bean name="jpadao" class=" com.trangile.spring.core.dao.EmployeeDaoHibernateImpl">
+       
+       </bean>
+       
+       
+       <bean name="service" class="com.trangile.spring.core.service.EmployeeServiceImpl" scope="prototype">
+       
+      <!--  <property name="dao"  ref="jpadao" ></property> -->
+      <constructor-arg ref="jpadao"></constructor-arg>
+       </bean>
+        
+       </beans>

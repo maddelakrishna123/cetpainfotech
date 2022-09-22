@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.cetpa.webapp.beans.Employee;
 import com.cetpa.webapp.dao.EmployeeDao;
 import com.cetpa.webapp.dao.EmployeeDaoImpl;
+import com.cetpa.webapp.dao.EmployeeDaoJpaImpl;
 import com.cetpa.webapp.db.DBConnection;
 import com.cetpa.webapp.services.EmployeeService;
 import com.cetpa.webapp.services.EmployeeServiceImpl;

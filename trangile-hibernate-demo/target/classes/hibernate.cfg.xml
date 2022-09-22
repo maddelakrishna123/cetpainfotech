@@ -18,10 +18,16 @@
 	<property name="hibernate.show_sql">true</property>
 	
 	<property name="hibernate.hbm2ddl.auto">update</property>
+	
+	
+
+	
 	<!-- Mapping Properties -->
 	<mapping class="com.trangile.hb.Product"/>
 <!-- <mapping resource="product.hbm.xml"/> -->
 	<mapping class="com.trangile.hb.Subscriber"/>
+	<mapping class="com.trangile.hb.associationmapping.Account"/>
+	<mapping class="com.trangile.hb.associationmapping.AtmCard"/>
 	</session-factory>
 	
 	</hibernate-configuration>

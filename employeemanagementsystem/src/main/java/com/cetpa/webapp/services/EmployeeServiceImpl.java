@@ -9,7 +9,7 @@ import com.cetpa.webapp.dao.EmployeeDaoImpl;
 public class EmployeeServiceImpl implements EmployeeService{
 
 	
-	private EmployeeDao dao;
+	private EmployeeDao dao; // dependency
 	
 	
 	
