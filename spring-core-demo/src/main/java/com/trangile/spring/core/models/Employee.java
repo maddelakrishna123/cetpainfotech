@@ -3,8 +3,11 @@ package com.trangile.spring.core.models;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 
-public class Employee {
+
+public class Employee{
 	
 	private int id;
 
@@ -86,11 +89,30 @@ public class Employee {
 		
 		System.out.println("Default Employee Constructor");
 	}
-	/*
-	 * @Override public String toString() { return "Employee [id=" + id + ", name="
-	 * + name + ", email=" + email + ", mobile=" + mobile + ", username=" + username
-	 * + ", password=" + password + ", salary=" + salary + "]"; }
-	 */
+	
+	  @Override public String toString() { return "Employee [id=" + id + ", name="
+	  + name + ", email=" + email + ", mobile=" + mobile + ", username=" + username
+	  + ", password=" + password + ", salary=" + salary + "]"; }
+	
+	  
+	 
+	  
+	  
+	  
+	public void init() throws Exception {
+		
+		if(this.salary == 0)
+		{
+			this.salary =15000;
+		}
+		
+	}
+	
+	public void clean() throws Exception {
+		
+		
+	}
+	 
 	
 
 }

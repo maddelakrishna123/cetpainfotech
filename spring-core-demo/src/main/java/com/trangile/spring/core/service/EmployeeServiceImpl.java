@@ -2,11 +2,20 @@ package com.trangile.spring.core.service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import com.trangile.spring.core.dao.EmployeeDao;
 import com.trangile.spring.core.models.Employee;
-
+//@Component
+@Service
+@Qualifier("empservice")
 public class EmployeeServiceImpl implements EmployeeService {
 
+	@Autowired
+	//@Qualifier("dao2")
 	private EmployeeDao dao;  // dependency
 	
 	
@@ -14,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public EmployeeDao getDao() {
 		return dao;
 	}
-
+	
 	public void setDao(EmployeeDao dao) {
 		System.out.println("Setter Method is called");
 		this.dao = dao;
@@ -29,7 +38,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		super();
 		System.out.println("Default Constructor in employee service");
 	}
-
+	
 	public EmployeeServiceImpl(EmployeeDao dao) {
 		super();
 		
