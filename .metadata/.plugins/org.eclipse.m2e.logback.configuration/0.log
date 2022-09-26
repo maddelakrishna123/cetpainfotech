@@ -3940,3 +3940,14 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-c
 2022-09-23 17:24:14,993 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\personal\11am-sessions\spring-dao-jdbc-demo\src\main\resources
 2022-09-23 17:24:14,994 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-09-23 17:24:14,994 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\personal\11am-sessions\spring-dao-jdbc-demo\src\test\resources
+2022-09-23 17:27:37,552 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-23 17:27:37,563 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-23 17:27:37,564 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-23 17:27:37,564 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\personal\11am-sessions\spring-dao-jdbc-demo\src\test\resources
+2022-09-23 17:27:44,392 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-23 17:27:44,393 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-23 17:27:44,396 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-23 17:27:44,396 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\personal\11am-sessions\spring-dao-jdbc-demo\src\test\resources
+2022-09-23 17:59:06,899 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@7d414f63{STOPPING}[10.0.6,sto=0]
+2022-09-23 17:59:06,905 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@218d1331{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-09-23 17:59:06,915 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@70114c00{/help,null,STOPPED}
