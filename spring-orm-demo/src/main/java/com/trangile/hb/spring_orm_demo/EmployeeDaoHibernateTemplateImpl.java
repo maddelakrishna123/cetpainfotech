@@ -1,5 +1,6 @@
 package com.trangile.hb.spring_orm_demo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +25,24 @@ public class EmployeeDaoHibernateTemplateImpl implements EmployeeDao{
 	}
 
 	@Override
+	@Transactional
 	public boolean update(Employee employee) {
 		
+		
+		template.update(employee);
 		return false;
 	}
 
 	@Override
+	@Transactional
 	public boolean delete(int empid) {
 		
+		Employee e = template.get(Employee.class, empid);
+		
+		if(e!=null)
+		{
+			template.delete(e);
+		}
 		return false;
 	}
 
@@ -44,13 +55,23 @@ public class EmployeeDaoHibernateTemplateImpl implements EmployeeDao{
 	@Override
 	public Employee findByUserName(String username) {
 		
+		
+		
 		return null;
 	}
 
 	@Override
 	public List<Employee> findAll() {
 		
-		return null;
+		
+	List list =	template.find("from Employee", null);
+	List<Employee> employeeList = new ArrayList<Employee>();
+	for(Object o:list)
+	{
+		Employee e = (Employee) o;
+		employeeList.add(e);
+	}
+		return employeeList;
 	}
 
 	@Override
