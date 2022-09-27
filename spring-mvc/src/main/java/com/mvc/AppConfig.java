@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Description;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
@@ -17,7 +20,13 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.mvc")
-public class AppConfig {
+public class AppConfig implements WebMvcConfigurer {
+	
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		
+		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+	}
     
 	/*@Bean
 	
@@ -34,7 +43,7 @@ public class AppConfig {
 	public SpringResourceTemplateResolver templateResolver() {
 		SpringResourceTemplateResolver srtr = new SpringResourceTemplateResolver();
 		//srtr.setApplicationContext(applicationContext);
-		srtr.setPrefix("/");
+		srtr.setPrefix("/WEB-INF/");
 		srtr.setSuffix(".html");
 		return srtr;
 	}

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.trangile.spring.core.service.EmployeeServiceImpl"/>
-    <fullyQualifiedTypeName name="com.trangile.spring.core.dao.EmployeeDao"/>
-    <fullyQualifiedTypeName name="com.trangile.spring.core.dao.EmployeeDaoJpaImpl"/>
     <fullyQualifiedTypeName name="com.trangile.spring.core.models.Employee"/>
     <fullyQualifiedTypeName name="com.trangile.spring.core.service.EmployeeService"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
@@ -58,6 +55,9 @@
     <fullyQualifiedTypeName name="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver"/>
     <fullyQualifiedTypeName name="org.thymeleaf.spring5.view.ThymeleafViewResolver"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
-    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.AbstractController"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.AbstractController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurer"/>
 </qualifiedTypeNameHistroy>
