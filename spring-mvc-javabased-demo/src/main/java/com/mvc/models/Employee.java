@@ -7,14 +7,21 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.Pattern;
+import javax.xml.bind.annotation.XmlRootElement;
+
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name="emp_mvc_tbl1")
+@XmlRootElement
 public class Employee {
 	@Id
 	@SequenceGenerator(name="empSeq",initialValue = 10000,allocationSize = 1,sequenceName = "EMP_SEQ")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "empSeq")
 	private int eid;
+	@Pattern(regexp = "^[a-zA-Z0-9]{5,15]$",message = "Not Valid")
 	private String ename;
 	@Column(unique = true)
 	private String email;
@@ -22,6 +29,7 @@ public class Employee {
 	@Column(unique = true)
 	private String username;
 	private String password;
+	
 	private double salary;
 	public int getEid() {
 		return eid;

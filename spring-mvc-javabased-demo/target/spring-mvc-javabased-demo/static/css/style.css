@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+body
+{
+	background-color: #bbdbf0;
+}
+
+
+.header
+{
+	height: 90px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color:#00004d;
+	color:white;
+	text-align: right;
+}
+li
+{
+	display: inline;
+	
+}
+.logo {
+	font-size: 25px;
+	text-align: left;
+	font-family: cursive;	
+	margin: 0px;
+	padding: 0px;
+}
+
+li a {
+	color: white;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+
+.reg-form
+{
+	width: 400px;
+	margin: auto;
+	height: auto;
+	
+}
+.btn
+{
+	display: block;
+	text-decoration: none;
+	background-color: gray;
+	text-align: center;
+}

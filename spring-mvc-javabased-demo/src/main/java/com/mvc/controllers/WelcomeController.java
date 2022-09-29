@@ -1,8 +1,13 @@
 package com.mvc.controllers;
 
+import javax.validation.Valid;
+
+//import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -72,8 +77,15 @@ public class WelcomeController {
 		}
 	    
 	    @RequestMapping(value="/register",method = RequestMethod.POST)
-		public String register(@ModelAttribute Employee emp, Model model)
+		public String register(@Valid @ModelAttribute Employee emp, Model model, BindingResult br)
 		{
+	    	System.out.println("e "+emp);
+	    	
+	    	if(br.hasErrors())
+		{
+			return "register";
+		}
+	    	
 	    	int empid =service.createNewEmployee(emp);
 	    	
 	    	if(empid>=1)
@@ -93,3 +105,5 @@ public class WelcomeController {
 	    	return "employee";
 	    }
 }
+
+// selection, checkboxes , radio button
