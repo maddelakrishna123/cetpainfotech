@@ -24,6 +24,8 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeServices service;
 	//@RequestMapping(value="/",method = RequestMethod.GET)
+	
+
 	@GetMapping("/")
 	public String index()
 	{
